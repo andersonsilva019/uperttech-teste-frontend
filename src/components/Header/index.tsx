@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoUperttech from '../../../assets/images/logo.png';
+import logoUperttech from '../../assets/images/logo.png';
 import { Container, Logo, Navigation, NavigateToProducts } from './styles';
 
 const Header: React.FC = () => {
