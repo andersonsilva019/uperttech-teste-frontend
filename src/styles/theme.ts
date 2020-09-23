@@ -4,6 +4,7 @@ export default {
     textButton: '#F5FEFF',
     title: '#112B7D',
     buttonNav: '#000',
+    backgroundInput: '#fff',
   },
   fontSizes: {
     small: '1.2rem',
