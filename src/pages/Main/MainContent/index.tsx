@@ -7,7 +7,7 @@ const MainContent: React.FC = () => {
     <Container>
       <Wrapper>
         <Title>Soluções inteligentes para modernizar sua empresa</Title>
-        <ButtonNavigateToSignUp to="/signup">
+        <ButtonNavigateToSignUp to="/login">
           Solicite seu orçamento
         </ButtonNavigateToSignUp>
       </Wrapper>

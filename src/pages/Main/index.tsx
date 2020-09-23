@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from './styles';
-import Header from './Header';
+import { Header } from '../../components';
 import MainContent from './MainContent';
 
 const Main: React.FC = () => {
