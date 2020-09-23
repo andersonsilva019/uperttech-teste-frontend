@@ -8,4 +8,25 @@ export default createGlobalStyle`
     outline: 0;
   }
 
+  html, body, #root{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body, input, button {
+    font-family: 'Montserrat', serif;
+  }
+
+  #root {
+    height: 100%;
+  }
+
+  body {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
 `;
