@@ -7,5 +7,9 @@ export const Container = styled.div`
     background: url(${BackgroundImage}) no-repeat center;
     /* background-size: cover; */
     height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
   `}
 `;
