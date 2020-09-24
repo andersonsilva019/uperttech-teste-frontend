@@ -4,7 +4,7 @@ import artImage from '../../../assets/images/art1.svg';
 
 export const Container = styled.div`
   flex: 1;
-  background: url(${artImage}) no-repeat top;
+  background: url(${artImage}) no-repeat center 17rem;
   background-size: cover;
 `;
 
@@ -18,18 +18,23 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.title};
-  font-size: ${({ theme }) => theme.fontSizes.tiny};
+  font-size: ${({ theme }) => theme.fontSizes.large};
   text-align: center;
-  width: 90rem;
+  width: 80rem;
 `;
 
 export const ButtonNavigateToSignUp = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  height: 5rem;
+
+  height: 6rem;
   padding: 1.5rem 2.8rem;
-  background: ${({ theme }) => theme.colors.primary};
   margin-top: 4rem;
-  font-size: ${({ theme }) => theme.fontSizes.large};
+
+  background: ${({ theme }) => theme.colors.primary};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
   color: ${({ theme }) => theme.colors.textButton};
   box-shadow: ${({ theme }) => theme.shadows.default};
   font-weight: 500;
