@@ -2,14 +2,14 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Main from '../pages/Main';
 import Login from '../pages/Login';
+import ProductList from '../pages/ProductList';
 
 const Routes: React.FC = () => {
   return (
     <Switch>
       <Route path="/" exact component={Main} />
-      <Route path="/login" exact component={Login} />
-      {/* <Route path="/products" exact component={Main} /> */}
-      {/* <Route path="/sign" exact component={Main}/> */}
+      <Route path="/login" component={Login} />
+      <Route path="/products" component={ProductList} />
     </Switch>
   );
 };

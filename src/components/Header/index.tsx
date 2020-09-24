@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <Container>
       <Logo src={logoUperttech} />
       <Navigation>
-        <Link to="/tdetdte">Quem somos</Link>
+        <Link to="/">Quem somos</Link>
         <Link to="/tdetdte">Serviços</Link>
         <NavigateToProducts to="/products">Soluções</NavigateToProducts>
       </Navigation>
