@@ -24,7 +24,7 @@ export const Navigation = styled.nav`
 
   a {
     color: ${({ theme }) => theme.colors.buttonNav};
-    font-size: ${({ theme }) => theme.fontSizes.large};
+    font-size: ${({ theme }) => theme.fontSizes.default};
     text-decoration: none;
 
     :nth-child(1) {
@@ -45,12 +45,12 @@ export const NavigateToProducts = styled(Link)`
   background: ${({ theme }) => theme.colors.primary};
   padding: 1.5rem 2.8rem;
   color: ${({ theme }) => theme.colors.textButton} !important;
-  font-size: ${({ theme }) => theme.fontSizes.default} !important;
+  font-size: ${({ theme }) => theme.fontSizes.small} !important;
   font-weight: 500;
   transition: ${({ theme }) => theme.transition.default};
 
   :hover {
-    font-size: ${({ theme }) => theme.fontSizes.large};
+    /* font-size: ${({ theme }) => theme.fontSizes.large}; */
     box-shadow: ${({ theme }) => theme.shadows.default};
   }
 `;

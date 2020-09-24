@@ -6,13 +6,13 @@ export const Container = styled.div`
   background: url(${BackgroundImage}) no-repeat center;
   /* background-size: cover; */
   width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
   width: 100%;
   max-width: 100rem;
   margin: 0 auto;
@@ -24,13 +24,14 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.title};
-  font-size: ${({ theme }) => theme.fontSizes.tiny};
+  font-size: ${({ theme }) => theme.fontSizes.large};
   text-align: center;
 `;
 
 export const Grid = styled.div`
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 2rem 4rem;
+  padding: 0 2.8rem;
 `;

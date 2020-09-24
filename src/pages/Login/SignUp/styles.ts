@@ -7,7 +7,7 @@ export const Container = styled.fieldset`
 `;
 
 export const Title = styled.legend`
-  font-size: ${({ theme }) => theme.fontSizes.large};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
   color: ${({ theme }) => theme.colors.primary};
   font-weight: bold;
 `;

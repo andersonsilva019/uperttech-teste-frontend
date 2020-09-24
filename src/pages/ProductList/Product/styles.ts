@@ -28,5 +28,5 @@ export const Wrapper = styled.div`
 export const Description = styled.div`
   margin-top: 2rem;
   color: ${({ theme }) => theme.colors.title};
-  font-size: ${({ theme }) => theme.fontSizes.default};
+  font-size: ${({ theme }) => theme.fontSizes.small};
 `;
