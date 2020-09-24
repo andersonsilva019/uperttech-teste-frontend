@@ -7,10 +7,10 @@ export default {
     backgroundInput: '#fff',
   },
   fontSizes: {
-    small: '1.2rem',
-    default: '1.4rem',
-    large: '1.6rem',
-    tiny: '7.0rem',
+    small: '1.5rem',
+    default: '1.6rem',
+    medium: '1.8rem',
+    large: '6.0rem',
   },
   transition: {
     default: '200ms ease-in-out',
