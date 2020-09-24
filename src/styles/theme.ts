@@ -17,6 +17,6 @@ export default {
   },
   shadows: {
     default: '0 0.5rem 2rem rgb(76, 113, 251,0.8)',
-    flat: '0 0.2rem 0.2rem rgba(0, 0, 0, 0.08)',
+    flat: '0 0.2rem 3rem rgba(0, 0, 0, 0.08)',
   },
 } as const;
