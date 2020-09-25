@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import BackgroundImage from '../../assets/images/background1.svg';
+import { BackgroundImage } from '../../assets/images';
 
 export const Container = styled.div`
   flex: 1;
-  background: url(${BackgroundImage}) no-repeat center;
-  /* background-size: cover; */
+  background: url(${BackgroundImage});
+  background-repeat: repeat-y;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.title};
-  font-size: ${({ theme }) => theme.fontSizes.large};
+  font-size: min(4vw, ${({ theme }) => theme.fontSizes.large});
   text-align: center;
 `;
 

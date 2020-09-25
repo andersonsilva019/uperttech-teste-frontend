@@ -9,16 +9,12 @@ export default createGlobalStyle`
   }
 
   html, body, #root{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
   }
 
   body, input, button {
     font-family: 'Montserrat', serif;
-  }
-
-  #root {
-    height: 100%;
   }
 
   body {
@@ -28,5 +24,8 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%;
+    @media (min-width: 1981px) {
+      font-size: 80%;
+    };
   }
 `;

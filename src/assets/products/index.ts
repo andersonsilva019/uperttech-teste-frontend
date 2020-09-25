@@ -1,2 +1,1 @@
-export { default as keyboardImage } from './keyboard.jpg';
-export { default as notebookImage } from './notebook.jpg';
+export { default as NotebookImage } from './notebook.jpg';

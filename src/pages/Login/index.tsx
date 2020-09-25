@@ -1,9 +1,16 @@
 import React from 'react';
 
-import { Container, Content, Wrapper, Line } from './styles';
 import { Header } from '../../components';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import { ArtImage } from '../../assets/images';
+import {
+  Container,
+  Content,
+  Wrapper,
+  Line,
+  ArtImageBackground,
+} from './styles';
 
 const Login: React.FC = () => {
   return (
@@ -15,6 +22,7 @@ const Login: React.FC = () => {
           <Line />
           <SignUp />
         </Content>
+        <ArtImageBackground src={ArtImage} alt="background" />
       </Wrapper>
     </Container>
   );

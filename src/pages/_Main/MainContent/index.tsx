@@ -1,6 +1,12 @@
 import React from 'react';
-
-import { Container, Wrapper, Title, ButtonNavigateToSignUp } from './styles';
+import { ArtImage } from '../../../assets/images';
+import {
+  Container,
+  Wrapper,
+  Title,
+  ButtonNavigateToSignUp,
+  ArtImageBackground,
+} from './styles';
 
 const MainContent: React.FC = () => {
   return (
@@ -10,6 +16,7 @@ const MainContent: React.FC = () => {
         <ButtonNavigateToSignUp to="/login">
           Solicite seu orçamento
         </ButtonNavigateToSignUp>
+        <ArtImageBackground src={ArtImage} alt="background" />
       </Wrapper>
     </Container>
   );

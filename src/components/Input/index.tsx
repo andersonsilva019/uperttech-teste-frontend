@@ -1,4 +1,3 @@
-
 import React, {
   useCallback,
   useRef,
@@ -9,8 +8,8 @@ import React, {
 
 import { IconBaseProps } from 'react-icons';
 
-import { Container } from './styles';
 import { useField } from '@unform/core';
+import { Container } from './styles';
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
@@ -19,17 +18,11 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   toggleVisiblePassword?(): void;
 }
 
-const Input: React.FC<IInputProps> = ({
-  name,
-  icon: Icon,
-  disabledCursorPointer,
-  toggleVisiblePassword,
-  ...rest
-}) => {
+const Input: React.FC<IInputProps> = ({ name, icon: Icon, ...rest }) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [isFilled, setIsFilled] = useState(false);
-  const { fieldName, registerField, defaultValue, error } = useField(name);
+  const { fieldName, registerField, defaultValue } = useField(name);
 
   const handleInputFocus = useCallback(() => {
     setIsFocused(true);
@@ -58,15 +51,15 @@ const Input: React.FC<IInputProps> = ({
 
   return (
     <Container isFilled={isFilled} isFocused={isFocused}>
-    {Icon && <Icon size={20} />}
-    <input
-      onFocus={handleInputFocus}
-      onBlur={handleInputBlur}
-      defaultValue={defaultValue}
-      ref={inputRef}
-      {...rest}
-    />
-  </Container>
+      {Icon && <Icon size={20} />}
+      <input
+        onFocus={handleInputFocus}
+        onBlur={handleInputBlur}
+        defaultValue={defaultValue}
+        ref={inputRef}
+        {...rest}
+      />
+    </Container>
   );
 };
 

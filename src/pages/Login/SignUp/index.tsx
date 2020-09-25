@@ -9,9 +9,19 @@ const SignUp: React.FC = () => {
     <Container>
       <Title>Quero criar uma conta</Title>
       <Form onSubmit={() => console.log('enviado')}>
-        <Input name="name" placeholder="Seu nome" icon={FiUser} />
-        <Input name="email" placeholder="Seu e-mail" icon={FiMail} />
-        <Input name="password" placeholder="Sua senha secreta" icon={FiLock} />
+        <Input name="name" placeholder="Seu nome" icon={FiUser} type="text" />
+        <Input
+          name="email"
+          placeholder="Seu e-mail"
+          icon={FiMail}
+          type="email"
+        />
+        <Input
+          name="password"
+          placeholder="Sua senha secreta"
+          icon={FiLock}
+          type="password"
+        />
         <Button>Criar conta</Button>
       </Form>
     </Container>

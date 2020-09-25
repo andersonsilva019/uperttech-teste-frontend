@@ -9,8 +9,18 @@ const SignIn: React.FC = () => {
     <Container>
       <Title>Já sou cliente</Title>
       <Form onSubmit={() => console.log('enviado')}>
-        <Input name="email" placeholder="Seu e-mail" icon={FiMail} />
-        <Input name="password" placeholder="Sua senha secreta" icon={FiLock} />
+        <Input
+          name="email"
+          placeholder="Seu e-mail"
+          icon={FiMail}
+          type="email"
+        />
+        <Input
+          name="password"
+          placeholder="Sua senha secreta"
+          icon={FiLock}
+          type="password"
+        />
         <Button type="submit">Entrar</Button>
       </Form>
     </Container>

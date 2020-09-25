@@ -4,6 +4,7 @@ export const Container = styled.fieldset`
   padding: 2rem;
   margin-top: 4rem;
   border: 0;
+  z-index: 2;
 `;
 
 export const Title = styled.legend`
