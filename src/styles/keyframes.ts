@@ -21,3 +21,11 @@ export const appearFromTop = keyframes`
     transform: translateY(0px);
   }
 `;
+export const appearFromLeftLine = keyframes`
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+`;

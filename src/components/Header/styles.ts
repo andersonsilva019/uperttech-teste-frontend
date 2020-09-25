@@ -1,5 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+import { appearFromLeftLine } from '../../styles/keyframes';
 
 export const Container = styled.div`
   padding: 2.5rem 4rem;
@@ -14,6 +15,21 @@ export const Logo = styled.img`
   width: 22rem;
 `;
 
+const animateLine = css`
+  :hover {
+    ::after {
+      position: absolute;
+      content: '';
+      animation: ${appearFromLeftLine} 0.3s;
+      width: 100%;
+      left: 0;
+      bottom: -10px;
+      background: ${({ theme }) => theme.colors.primary};
+      height: 2px;
+    }
+  }
+`;
+
 export const Navigation = styled.nav`
   width: 100%;
   max-width: 50rem;
@@ -26,13 +42,16 @@ export const Navigation = styled.nav`
     color: ${({ theme }) => theme.colors.buttonNav};
     font-size: ${({ theme }) => theme.fontSizes.default};
     text-decoration: none;
+    position: relative;
 
     :nth-child(1) {
       font-weight: 500;
+      ${animateLine}
     }
 
     :nth-child(2) {
       opacity: 0.7;
+      ${animateLine}
     }
 
     & + a {
